@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaCheck - Your Weather Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ClimaCheck</h1>
+        <p>Your Weather Navigator</p>
+    </header>
+    <main>
+        <form  id="weather-form"  >
+            <label for="city">Enter City Name:</label>
+            <input type="text" id="city" name="city" placeholder="E.g., New York" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weather-results" class="hidden">
+            <h2>Weather for <span id="city-name"></span>:</h2>
+            <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+            <p><strong>Description:</strong> <span id="description"></span></p>
+        </div>
+        <footer></footer>
+    </main>
+    <script src="client.js"></script>
+</body>
+
+</html>
